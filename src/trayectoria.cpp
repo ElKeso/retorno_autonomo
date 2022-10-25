@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-//#include "nav_msgs/Odometry.h"
+#include "nav_msgs/Odometry.h"
 //#include "retorno_autonomo/ret.h"
 //#include "retorno_autonomo/tray.h"
 //#include "retorno_autonomo/trayArray.h"
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
   ros::init(argc, argv, "trayectoria");
   ros::NodeHandle nh;
   ros::Subscriber sub_pos = nh.subscribe("RosAria/pose", 1000, posicion);
-  ros::Subscriber sub_ret = nh.subscribe("/retornar", 1000, accion);
+//  ros::Subscriber sub_ret = nh.subscribe("/retornar", 1000, accion);
 //  ros::Publisher pub_cam = nh.advertise<retorno_autonomo::trayArray>("/camino",1000);
   ros::Rate loop(5);
   while(ros::ok()){
