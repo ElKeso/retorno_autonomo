@@ -7,7 +7,7 @@ int main(int argc, char **argv)
   ros::NodeHandle nh;
   //ros::Publisher pub_ret = nh.advertise<retorno_autonomo::ret>("/retornar", 1000);
   //retorno_autonomo::ret r;
-  r.ret=0;
+  //r.ret=0;
   int cont=0;
   ros::Rate loop_rate(5);
   while (ros::ok()){
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
     //pub_ret.publish(r);
     //r.ret=0;
     cont=cont+1;
-    nROS_INFO("%d",cont);
+    ROS_INFO("%d",cont);
   }
 
   return 0;
