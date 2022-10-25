@@ -52,9 +52,9 @@ int main(int argc, char **argv){
   ros::init(argc, argv, "retorno");
   ros::NodeHandle nh;
   ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("RosAria/cmd_vel",1000);
-  ros::Subscriber sub_cam = nh.subscribe("/camino", 1000, trayectoria);
-  ros::Subscriber sub_pos = nh.subscribe("/RosAria/pose", 1000, posicion);
-  ros::Subscriber sub_ret = nh.subscribe("/retornar",1000, retorno);
+  //ros::Subscriber sub_cam = nh.subscribe("/camino", 1000, trayectoria);
+  //ros::Subscriber sub_pos = nh.subscribe("/RosAria/pose", 1000, posicion);
+  //ros::Subscriber sub_ret = nh.subscribe("/retornar",1000, retorno);
   ros::Rate loop_rate(10000);
   ros::Rate rate(1);
   c=0;
