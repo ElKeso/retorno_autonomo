@@ -146,7 +146,7 @@ add_executable(reloj src/reloj.cpp)
 add_executable(trayectoria src/trayectoria.cpp)
 add_executable(retorno src/retorno.cpp)
 add_executable(revision src/revision.cpp)
-
+add_executable(revision src/freno.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -173,7 +173,9 @@ target_link_libraries(retorno
 target_link_libraries(revision
  ${catkin_LIBRARIES}
 )
-
+target_link_libraries(freno
+ ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##
