@@ -22,7 +22,7 @@ int main(int argc, char **argv){
         break;
         case 1:
             for(int i=0; i<=10; i=i+1){
-                mover.linear.x=-0.2
+                mover.linear.x=-0.2;
                 pub.publish(mover);
                 mover.linear.x=mover.linear.x+0.02
             }
