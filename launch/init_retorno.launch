@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="retorno_autonomo" name="trayectoria" type="trayectoria" />
+	<node pkg="retorno_autonomo" name="retorno" type="retorno" output="screen" />
+	<node pkg="retorno_autonomo" name="reloj" type="reloj" output="screen"/>
+</launch>
